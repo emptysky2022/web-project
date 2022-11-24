@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.main_img{
+  height: 400px;
+  background-image: url(../images/hd-wallpaper-gc2677f8ba_1920.jpg);
+  background-size: 100%;
+  
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 8px 12px;
+  border-bottom: 1px solid white;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.navbar_logo {
+  font-size: 24px;
+}
+
+.navbar_logo i {
+  color: white;
+}
+
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 5px;
+  margin-left: 30px;
+  letter-spacing: 7px;
+}
+
+.navbar_menu li:hover {
+  font-weight: bolder;
+}
+
+.navbar_icons {
+  list-style: none;
+  display: flex;
+  color: white;
+}
+
+.navbar_icons li {
+  padding: 8px 12px;
+}
+
+.navbar_toggleBtn {
+  position: absolute;
+  right: 32px;
+  color: black;
+  font-size: 24px;
+  display: none;
+}
+
+.navbar_menu.active,
+.navbar_icons.active {
+  display: flex;
+}
+#login1{
+  margin-left: 25px;
+  text-align: center;
+}
+
+.sub_navbar ul{
+  list-style: none;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 20px 0px;
+  background-color: rgb(236, 236, 236);
+  
+}
+.sub_navbar ul li{
+  display: inline;
+  text-transform: uppercase;
+  margin:0px 50px;
+  letter-spacing: 5px;
+}
+.sub_navbar ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 20px 20px;
+  font-weight: bolder;
+}
+.sub_navbar a:hover{
+  border-bottom: 3px solid rgb(231, 228, 42);
+}
+
+
+@media screen and (max-width: 1200px) {
+  a{
+    color: black;
+  }
+  .navbar_logo i {
+    color: black;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+    background-color: white;
+  }
+
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+  #nav_img{
+    width: 100%;
+    height: 300px;
+  }
+  .navbar_menu li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar_icons {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    display: none;
+  }
+
+  .navbar_toggleBtn {
+    display: block;
+  }
+
+
+}
+@media screen and (max-width: 800px){
+  a{
+    color: black;
+  }
+  .sub_navbar ul li a{
+    font-size: 80%;
+  }
+  .sub_navbar ul li a{
+    padding: 30px 30px;
+  }
+  .sub_navbar ul li{
+    display: inline;
+    text-transform: uppercase;
+    margin:0px 10px;
+    letter-spacing: 5px;
+  }
+}
+@media screen and (max-width: 600px){
+  .sub_navbar ul li a{
+    font-size: 50%;
+  }
+  .sub_navbar ul li a{
+    padding: 15px 15px;
+  }
+  .sub_navbar ul li{
+    display: inline;
+    text-transform: uppercase;
+    margin:0px 10px;
+    letter-spacing: 0px;
+  }
+}
+
+
+

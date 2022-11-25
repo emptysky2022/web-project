@@ -1,0 +1,26 @@
+section{
+    width: 80%;
+    padding-left: 10%;
+}
+
+.toolImage{
+    float: left;
+    width: 40%;
+    height: 480px;
+    margin-left: 40px;
+}
+
+.explan{
+    float: left;
+    width: 40%;
+    height: 480px;
+    margin-left: 40px;
+}
+
+.explan_text{
+    text-align: center;
+}
+
+.explan_text>*{
+    margin-top: 50px;
+}

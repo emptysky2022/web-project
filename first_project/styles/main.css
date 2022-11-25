@@ -9,7 +9,7 @@ a {
   text-decoration: none;
   color: white;
 }
-.main_img{
+header{
   height: 400px;
   background-image: url(../images/hd-wallpaper-gc2677f8ba_1920.jpg);
   background-size: 100%;
@@ -62,6 +62,9 @@ a {
 }
 
 .navbar_toggleBtn {
+  border: 0;
+  outline: 0;
+  background-color: rgba(0,0,0,0);
   position: absolute;
   right: 32px;
   color: black;

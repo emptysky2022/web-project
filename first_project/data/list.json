@@ -1,0 +1,22 @@
+[
+    {
+        "id": "running",
+        "img": "running.jpg",
+        "p": "러닝머신"
+    },
+    {
+        "id": "babel",
+        "img": "babel.jpg",
+        "p": "바벨"
+    },
+    {
+        "id": "bench",
+        "img": "bench.jpg",
+        "p": "벤치프레스"
+    },
+    {
+        "id": "babel2",
+        "img": "babel.jpg",
+        "p": "바벨2"
+    }
+]

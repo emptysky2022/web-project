@@ -18,5 +18,25 @@
         "id": "babel2",
         "img": "babel.jpg",
         "p": "바벨2"
+    },
+    {
+        "id": "running2",
+        "img": "running.jpg",
+        "p": "러닝머신2"
+    },
+    {
+        "id": "babel3",
+        "img": "babel.jpg",
+        "p": "바벨3"
+    },
+    {
+        "id": "bench2",
+        "img": "bench.jpg",
+        "p": "벤치프레스2"
+    },
+    {
+        "id": "babel4",
+        "img": "babel.jpg",
+        "p": "바벨4"
     }
 ]

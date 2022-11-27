@@ -10,7 +10,7 @@ $(function () {
         const list = request.response.filter(e => e.id == goodsID)
         goodHtml = 
         "<img class='toolImage' src='../images/"+list[0].img + "' alt='" + list[0].p + "'>"
-        + "<article clas='explan'>"
+        + "<article class='explan'>"
         + "<div class='explan_text'>"
         + "<h1>" + list[0].p +"</h1>"
         + "<h3>난이도: 5.0/5.0</h3>"

@@ -1,6 +1,6 @@
 $(function () { 
   $("body").prepend("<header></header>")
-  $("header").load("main.html", function(){
+  $("header").load("../header.html", function(){
     
     const toggleBtn = document.querySelector('.navbar_toggleBtn');
     const menu = document.querySelector('.navbar_menu');

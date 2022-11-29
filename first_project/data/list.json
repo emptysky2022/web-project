@@ -1,42 +1,226 @@
-[
-    {
-        "id": "running",
-        "img": "running.jpg",
-        "p": "러닝머신"
-    },
-    {
-        "id": "babel",
-        "img": "babel.jpg",
-        "p": "바벨"
-    },
-    {
-        "id": "bench",
-        "img": "bench.jpg",
-        "p": "벤치프레스"
-    },
-    {
-        "id": "babel2",
-        "img": "babel.jpg",
-        "p": "바벨2"
-    },
-    {
-        "id": "running2",
-        "img": "running.jpg",
-        "p": "러닝머신2"
-    },
-    {
-        "id": "babel3",
-        "img": "babel.jpg",
-        "p": "바벨3"
-    },
-    {
-        "id": "bench2",
-        "img": "bench.jpg",
-        "p": "벤치프레스2"
-    },
-    {
-        "id": "babel4",
-        "img": "babel.jpg",
-        "p": "바벨4"
-    }
-]
+{
+    "goods": [
+        {
+            "id": "running",
+            "img": "running.jpg",
+            "name": "러닝머신",
+            "detail": {
+                "name": "treadmill",
+                "comment": "달리기를 실내에서 할 수 있는 운동기구",
+                "tag": {
+                    "run": "달리기"
+                }
+            }
+        },
+        {
+            "id": "babel",
+            "img": "babel.jpg",
+            "name": "역기",
+            "detail": {
+                "name": "barbell",
+                "comment": "역도, 파워리프팅 등에서 사용하는 운동기구. 플레이트 무게에 봉 무게 20kg을 더해서 계산하며, 흔히 3대 운동이라 불리는 데드리프트, 스쿼트, 벤치 프레스를 이 바벨의 중량으로 3대XXX라고 표현한다.",
+                "tag": {
+                    "deadlift": "데드리프트",
+                    "squat": "스쿼트",
+                    "bench_press": "벤치프레스"
+                }
+            }
+        },
+        {
+            "id": "bench",
+            "img": "bench.jpg",
+            "name": "벤치프레스",
+            "detail": {
+                "name": "",
+                "comment": "",
+                "tag": []
+            }
+        },
+        {
+            "id": "babel2",
+            "img": "babel.jpg",
+            "name": "바벨",
+            "detail": {
+                "name": "",
+                "comment": "",
+                "tag": []
+            }
+        },
+        {
+            "id": "running",
+            "img": "running.jpg",
+            "name": "러닝머신",
+            "detail": {
+                "name": "treadmill",
+                "comment": "달리기를 실내에서 할 수 있는 운동기구",
+                "tag": {
+                    "run": "달리기"
+                }
+            }
+        },
+        {
+            "id": "babel",
+            "img": "babel.jpg",
+            "name": "역기",
+            "detail": {
+                "name": "barbell",
+                "comment": "역도, 파워리프팅 등에서 사용하는 운동기구. 플레이트 무게에 봉 무게 20kg을 더해서 계산하며, 흔히 3대 운동이라 불리는 데드리프트, 스쿼트, 벤치 프레스를 이 바벨의 중량으로 3대XXX라고 표현한다.",
+                "tag": {
+                    "deadlift": "데드리프트",
+                    "squat": "스쿼트",
+                    "bench_press": "벤치프레스"
+                }
+            }
+        },
+        {
+            "id": "bench",
+            "img": "bench.jpg",
+            "name": "벤치프레스",
+            "detail": {
+                "name": "",
+                "comment": "",
+                "tag": []
+            }
+        },
+        {
+            "id": "babel2",
+            "img": "babel.jpg",
+            "name": "바벨",
+            "detail": {
+                "name": "",
+                "comment": "",
+                "tag": []
+            }
+        }
+    ],
+    "exercise": [
+        {
+            "id": "bench_press",
+            "img": "bench_press.jpg",
+            "name": "벤치프레스",
+            "detail": {
+                "name": "bench press",
+                "comment": "누워서 바벨을 들어 올리는 상체 운동",
+                "tag": {
+                    "arm": "팔",
+                    "chest": "가슴",
+                    "shoulder": "어깨"
+                }
+            }
+        },
+        {
+            "id": "bench_press",
+            "img": "bench_press.jpg",
+            "name": "벤치프레스",
+            "detail": {
+                "name": "bench press",
+                "comment": "누워서 바벨을 들어 올리는 상체 운동",
+                "tag": {
+                    "arm": "팔",
+                    "chest": "가슴",
+                    "shoulder": "어깨"
+                }
+            }
+        },
+        {
+            "id": "bench_press",
+            "img": "bench_press.jpg",
+            "name": "벤치프레스",
+            "detail": {
+                "name": "bench press",
+                "comment": "누워서 바벨을 들어 올리는 상체 운동",
+                "tag": {
+                    "arm": "팔",
+                    "chest": "가슴",
+                    "shoulder": "어깨"
+                }
+            }
+        },
+        {
+            "id": "bench_press",
+            "img": "bench_press.jpg",
+            "name": "벤치프레스",
+            "detail": {
+                "name": "bench press",
+                "comment": "누워서 바벨을 들어 올리는 상체 운동",
+                "tag": {
+                    "arm": "팔",
+                    "chest": "가슴",
+                    "shoulder": "어깨"
+                }
+            }
+        },
+        {
+            "id": "bench_press",
+            "img": "bench_press.jpg",
+            "name": "벤치프레스",
+            "detail": {
+                "name": "bench press",
+                "comment": "누워서 바벨을 들어 올리는 상체 운동",
+                "tag": {
+                    "arm": "팔",
+                    "chest": "가슴",
+                    "shoulder": "어깨"
+                }
+            }
+        }
+    ],
+    "parts": [
+        {
+            "id": "arm",
+            "img": "arm.jpg",
+            "name": "팔",
+            "detail": {
+                "name": "arm",
+                "comment": "어깨 아래 있는 팔근육들을 분류하였다.",
+                "tag": {
+                    "forearm": "전완근",
+                    "biceps": "이두박근", 
+                    "triceps": "삼두근"
+                }
+            }
+        },
+        {
+            "id": "shoulder",
+            "img": "shoulder.png",
+            "name": "어깨",
+            "detail": {
+                "name": "shoulder",
+                "comment": "어깨에 있는 근육들을 분류하였다.",
+                "tag": {
+                    "anterior_deltoid": "전면 삼각근",
+                    "lateral_deltoid": "측면 삼각근",
+                    "rear_deltoid": "후면 삼각근"
+                }
+            }
+        },
+        {
+            "id": "arm",
+            "img": "arm.jpg",
+            "name": "팔",
+            "detail": {
+                "name": "arm",
+                "comment": "어깨 아래 있는 팔근육들을 분류하였다.",
+                "tag": {
+                    "forearm": "전완근",
+                    "biceps": "이두박근", 
+                    "triceps": "삼두근"
+                }
+            }
+        },
+        {
+            "id": "shoulder",
+            "img": "shoulder.png",
+            "name": "어깨",
+            "detail": {
+                "name": "shoulder",
+                "comment": "어깨에 있는 근육들을 분류하였다.",
+                "tag": {
+                    "anterior_deltoid": "전면 삼각근",
+                    "lateral_deltoid": "측면 삼각근",
+                    "rear_deltoid": "후면 삼각근"
+                }
+            }
+        }
+    ]
+}

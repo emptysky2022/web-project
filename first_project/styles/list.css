@@ -1,6 +1,9 @@
-
+*{
+    margin: 0;
+}
 
 body{
+    background-color: rgb(196,207,229);
 
 }
 
@@ -13,25 +16,8 @@ nav{
 }
 
 section{
-
 }
 
-.section_header{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    vertical-align: middle;
-    background-image: url("../images/mountain.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.section_header_text{
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    font-size: 200%;
-}
 
 .section_header_text h1, .header_text p{
     margin: 10px 0;
@@ -71,28 +57,79 @@ section{
     padding-bottom: 50px;
 }
 
-.content{
-    width: 90%;
-    margin-left: 5%;
+.search{
+    width: 100%;
+    padding: 10px 0;
 }
 
+.search span{
+    margin: 10px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.content{
+    width: 100%;
+    height: 400px;
+    margin-left: 30px;
+}
+.swiper {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    width: 400px;
+    height: 90%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
 .list{
-    width: 200px;
+    width: 400px;
     height: 300px;
     display: inline;
     float: left;
     margin: 30px;
-    border: 1px solid black;
-
-    /* background-color: yellow; */
+    background-color: white;
+    border-radius: 10px;
 }
 
 .list img{
-    width: 100%;
-    height: 90%;
+    width: 90%;
+    height: 80%;
+    margin-left: 5%;
+    margin-top: 2.5%;
 }
 
+.swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
 .list p{
+    text-align: center;
+    padding-top: 20px;
     font-weight: bold;
 }
 

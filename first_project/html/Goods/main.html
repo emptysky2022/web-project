@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../../styles/header.css">
     <script src="../../scripts/list.js"></script>
     <link rel="stylesheet" href="../../styles/list.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <!-- <header>
@@ -42,7 +44,7 @@
     <ul>
         <li><a href="main.html">운동 기구</a></li>
         <li><a href="../Exercise/main.html">운동 종류</a></li>
-        <li><a href="../Parts/main.htmls">운동 부위</a></li>
+        <li><a href="../Parts/main.html">운동 부위</a></li>
     </ul>
 </nav>
     <aside></aside>
@@ -59,17 +61,17 @@
             <li>음식</li>
         </ul> -->
         <article>
-            <div class="article_header">
-                <div class="article_header_text">
-                    <strong>운동기구</strong>
-                </div>
+            <div class="search">
+                <input type="text" id="search" width="20px">
+                <button type="button" id="search_check">검색</button>
+                <span id="search_tag" hidden></span>
             </div>
-            <div class="content">
-                <!-- <div id="running" class="list">
+            <!-- <div class="content">
+                <div id="running" class="list">
                     <img src="../images/running.jpg" alt="러닝머신">
                     <p>러닝머신</p>
-                </div> -->
-            </div>
+                </div>
+            </div> -->
         </article>
     </section>
     <footer></footer>

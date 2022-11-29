@@ -16,7 +16,6 @@ $(function () {
         + "<article class='explan'>"
         + "<div class='explan_text'>"
         + "<h1>" + list[0].name + " (" +list[0].detail.name+ ")</h1>"
-        + "<h3>난이도: 5.0/5.0</h3>"
         + "<p>" + list[0].detail.comment+ "</p>"
         + "<div id='tags' class='tags'></div>"
         + "</div>"

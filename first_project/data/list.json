@@ -17,7 +17,7 @@
             "id": "babel",
             "img": "babel.jpg",
             "name": "역기",
-            "tag": ["바벨", "데드리프트", "스쿼트", "벤치프레스", "데드 리프트", "벤치 프레스", "역기", "3대", "역도", "중량운동", "중량", "중량 운동"],
+            "tag": ["바벨", "데드리프트", "스쿼트", "벤치프레스", "데드 리프트", "벤치 프레스", "역기", "3대", "역도", "중량운동", "중량", "중량 운동", "웨이트", "웨이트 트레이닝"],
             "detail": {
                 "name": "barbell",
                 "comment": "역도, 파워리프팅 등에서 사용하는 운동기구. 플레이트 무게에 봉 무게 20kg을 더해서 계산하며, 흔히 3대 운동이라 불리는 데드리프트, 스쿼트, 벤치 프레스를 이 바벨의 중량으로 3대XXX라고 표현한다.",
@@ -29,88 +29,23 @@
             }
         },
         {
-            "id": "bench",
-            "img": "bench.jpg",
-            "name": "벤치프레스 머신",
-            "tag": ["벤치 프레스", "벤치프레스", "3대"],
+            "id": "bench_press_chair",
+            "img": "bench_press_chair.jpg",
+            "name": "벤치프레스 의자",
+            "tag": ["벤치 프레스", "벤치프레스", "3대", "웨이트", "웨이트 트레이닝"],
             "detail": {
-                "name": "",
-                "comment": "",
-                "tag": {}
-            }
-        },
-        {
-            "id": "kettlebell",
-            "img": "kettlebell.jpg",
-            "name": "케틀벨",
-            "tag": ["근력 운동", "근력", "케틀벨", "중량운동", "중량", "중량 운동", "근력운동"],
-            "detail": {
-                "name": "kettlebell",
-                "comment": "실내에서 스윙 운동 및 중량운동이 가능함",
+                "name": "bench press machine",
+                "comment": "벤치프레스를 도와주는 의자다.",
                 "tag": {
-                    "weight training": "근력 운동"
-                }
-            }
-        },
-        {
-            "id": "elliptical",
-            "img": "elliptical.jfif",
-            "name": "일립티컬",
-            "tag": ["달리기", "런닝", "러닝", "자전거", "유산소 운동", "유산소", "유산소운동"],
-            "detail": {
-                "name": "elliptical",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구, 트레드밀과의 차이점은 강도가 상대적으로 적으며 관절에 무리가 가지않음.",
-                "tag": {
-                    "run": "달리기"
-                }
-            }
-        },
-
-
-        {
-            "id": "running",
-            "img": "running.jpg",
-            "name": "러닝머신",
-            "tag": ["유산소", "달리기", "유산소 운동", "러닝머신", "유산소운동", "런닝", "러닝"],
-            "detail": {
-                "name": "treadmill",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구",
-                "tag": {
-                    "run": "달리기"
-                }
-            }
-        },
-        {
-            "id": "babel",
-            "img": "babel.jpg",
-            "name": "역기",
-            "tag": ["바벨", "데드리프트", "스쿼트", "벤치프레스", "데드 리프트", "벤치 프레스", "역기", "3대", "역도", "중량운동", "중량", "중량 운동"],
-            "detail": {
-                "name": "barbell",
-                "comment": "역도, 파워리프팅 등에서 사용하는 운동기구. 플레이트 무게에 봉 무게 20kg을 더해서 계산하며, 흔히 3대 운동이라 불리는 데드리프트, 스쿼트, 벤치 프레스를 이 바벨의 중량으로 3대XXX라고 표현한다.",
-                "tag": {
-                    "deadlift": "데드리프트",
-                    "squat": "스쿼트",
                     "bench_press": "벤치프레스"
                 }
             }
         },
         {
-            "id": "bench",
-            "img": "bench.jpg",
-            "name": "벤치프레스 머신",
-            "tag": ["벤치 프레스", "벤치프레스", "3대"],
-            "detail": {
-                "name": "",
-                "comment": "",
-                "tag": {}
-            }
-        },
-        {
             "id": "kettlebell",
             "img": "kettlebell.jpg",
             "name": "케틀벨",
-            "tag": ["근력 운동", "근력", "케틀벨", "중량운동", "중량", "중량 운동", "근력운동"],
+            "tag": ["근력 운동", "근력", "케틀벨", "중량운동", "중량", "중량 운동", "근력운동", "근력", "근력 운동", "웨이트", "웨이트 트레이닝"],
             "detail": {
                 "name": "kettlebell",
                 "comment": "실내에서 스윙 운동 및 중량운동이 가능함",
@@ -133,197 +68,17 @@
             }
         },
         {
-            "id": "running",
-            "img": "running.jpg",
-            "name": "러닝머신",
-            "tag": ["유산소", "달리기", "유산소 운동", "러닝머신", "유산소운동", "런닝", "러닝"],
+            "id": "ezbar",
+            "img": "ezbar.jpg",
+            "name": "ez바",
+            "tag": ["벤치 프레스", "벤치프레스", "컬바", "ez바", "중량", "중량운동", "중량 운동", "근력운동", "근력", "근력 운동", "웨이트", "웨이트 트레이닝"],
             "detail": {
-                "name": "treadmill",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구",
-                "tag": {
-                    "run": "달리기"
-                }
-            }
-        },
-        {
-            "id": "babel",
-            "img": "babel.jpg",
-            "name": "역기",
-            "tag": ["바벨", "데드리프트", "스쿼트", "벤치프레스", "데드 리프트", "벤치 프레스", "역기", "3대", "역도", "중량운동", "중량", "중량 운동"],
-            "detail": {
-                "name": "barbell",
-                "comment": "역도, 파워리프팅 등에서 사용하는 운동기구. 플레이트 무게에 봉 무게 20kg을 더해서 계산하며, 흔히 3대 운동이라 불리는 데드리프트, 스쿼트, 벤치 프레스를 이 바벨의 중량으로 3대XXX라고 표현한다.",
+                "name": "ezbar",
+                "comment": "이름 그대로 쉬운바, 바벨처럼 1자가 아니고 꺾여 있어서 사용 근육이 미세하게 다르다.",
                 "tag": {
                     "deadlift": "데드리프트",
                     "squat": "스쿼트",
                     "bench_press": "벤치프레스"
-                }
-            }
-        },
-        {
-            "id": "bench",
-            "img": "bench.jpg",
-            "name": "벤치프레스 머신",
-            "tag": ["벤치 프레스", "벤치프레스", "3대"],
-            "detail": {
-                "name": "",
-                "comment": "",
-                "tag": {}
-            }
-        },
-        {
-            "id": "kettlebell",
-            "img": "kettlebell.jpg",
-            "name": "케틀벨",
-            "tag": ["근력 운동", "근력", "케틀벨", "중량운동", "중량", "중량 운동", "근력운동"],
-            "detail": {
-                "name": "kettlebell",
-                "comment": "실내에서 스윙 운동 및 중량운동이 가능함",
-                "tag": {
-                    "weight training": "근력 운동"
-                }
-            }
-        },
-        {
-            "id": "elliptical",
-            "img": "elliptical.jfif",
-            "name": "일립티컬",
-            "tag": ["달리기", "런닝", "러닝", "자전거", "유산소 운동", "유산소", "유산소운동"],
-            "detail": {
-                "name": "elliptical",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구, 트레드밀과의 차이점은 강도가 상대적으로 적으며 관절에 무리가 가지않음.",
-                "tag": {
-                    "run": "달리기"
-                }
-            }
-        },
-        {
-            "id": "running",
-            "img": "running.jpg",
-            "name": "러닝머신",
-            "tag": ["유산소", "달리기", "유산소 운동", "러닝머신", "유산소운동", "런닝", "러닝"],
-            "detail": {
-                "name": "treadmill",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구",
-                "tag": {
-                    "run": "달리기"
-                }
-            }
-        },
-        {
-            "id": "babel",
-            "img": "babel.jpg",
-            "name": "역기",
-            "tag": ["바벨", "데드리프트", "스쿼트", "벤치프레스", "데드 리프트", "벤치 프레스", "역기", "3대", "역도", "중량운동", "중량", "중량 운동"],
-            "detail": {
-                "name": "barbell",
-                "comment": "역도, 파워리프팅 등에서 사용하는 운동기구. 플레이트 무게에 봉 무게 20kg을 더해서 계산하며, 흔히 3대 운동이라 불리는 데드리프트, 스쿼트, 벤치 프레스를 이 바벨의 중량으로 3대XXX라고 표현한다.",
-                "tag": {
-                    "deadlift": "데드리프트",
-                    "squat": "스쿼트",
-                    "bench_press": "벤치프레스"
-                }
-            }
-        },
-        {
-            "id": "bench",
-            "img": "bench.jpg",
-            "name": "벤치프레스 머신",
-            "tag": ["벤치 프레스", "벤치프레스", "3대"],
-            "detail": {
-                "name": "",
-                "comment": "",
-                "tag": {}
-            }
-        },
-        {
-            "id": "kettlebell",
-            "img": "kettlebell.jpg",
-            "name": "케틀벨",
-            "tag": ["근력 운동", "근력", "케틀벨", "중량운동", "중량", "중량 운동", "근력운동"],
-            "detail": {
-                "name": "kettlebell",
-                "comment": "실내에서 스윙 운동 및 중량운동이 가능함",
-                "tag": {
-                    "weight training": "근력 운동"
-                }
-            }
-        },
-        {
-            "id": "elliptical",
-            "img": "elliptical.jfif",
-            "name": "일립티컬",
-            "tag": ["달리기", "런닝", "러닝", "자전거", "유산소 운동", "유산소", "유산소운동"],
-            "detail": {
-                "name": "elliptical",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구, 트레드밀과의 차이점은 강도가 상대적으로 적으며 관절에 무리가 가지않음.",
-                "tag": {
-                    "run": "달리기"
-                }
-            }
-        },
-        {
-            "id": "running",
-            "img": "running.jpg",
-            "name": "러닝머신",
-            "tag": ["유산소", "달리기", "유산소 운동", "러닝머신", "유산소운동", "런닝", "러닝"],
-            "detail": {
-                "name": "treadmill",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구",
-                "tag": {
-                    "run": "달리기"
-                }
-            }
-        },
-        {
-            "id": "babel",
-            "img": "babel.jpg",
-            "name": "역기",
-            "tag": ["바벨", "데드리프트", "스쿼트", "벤치프레스", "데드 리프트", "벤치 프레스", "역기", "3대", "역도", "중량운동", "중량", "중량 운동"],
-            "detail": {
-                "name": "barbell",
-                "comment": "역도, 파워리프팅 등에서 사용하는 운동기구. 플레이트 무게에 봉 무게 20kg을 더해서 계산하며, 흔히 3대 운동이라 불리는 데드리프트, 스쿼트, 벤치 프레스를 이 바벨의 중량으로 3대XXX라고 표현한다.",
-                "tag": {
-                    "deadlift": "데드리프트",
-                    "squat": "스쿼트",
-                    "bench_press": "벤치프레스"
-                }
-            }
-        },
-        {
-            "id": "bench",
-            "img": "bench.jpg",
-            "name": "벤치프레스 머신",
-            "tag": ["벤치 프레스", "벤치프레스", "3대"],
-            "detail": {
-                "name": "",
-                "comment": "",
-                "tag": {}
-            }
-        },
-        {
-            "id": "kettlebell",
-            "img": "kettlebell.jpg",
-            "name": "케틀벨",
-            "tag": ["근력 운동", "근력", "케틀벨", "중량운동", "중량", "중량 운동", "근력운동"],
-            "detail": {
-                "name": "kettlebell",
-                "comment": "실내에서 스윙 운동 및 중량운동이 가능함",
-                "tag": {
-                    "weight training": "근력 운동"
-                }
-            }
-        },
-        {
-            "id": "elliptical",
-            "img": "elliptical.jfif",
-            "name": "일립티컬",
-            "tag": ["달리기", "런닝", "러닝", "자전거", "유산소 운동", "유산소", "유산소운동"],
-            "detail": {
-                "name": "elliptical",
-                "comment": "달리기를 실내에서 할 수 있는 운동기구, 트레드밀과의 차이점은 강도가 상대적으로 적으며 관절에 무리가 가지않음.",
-                "tag": {
-                    "run": "달리기"
                 }
             }
         }
@@ -333,7 +88,7 @@
             "id": "bench_press",
             "img": "bench_press.jpg",
             "name": "벤치프레스",
-            "tag": [],
+            "tag": ["팔", "어깨", "가슴", "상체", "벤치프레스", "벤치 프레스", "웨이트", "웨이트 트레이닝"],
             "detail": {
                 "name": "bench press",
                 "comment": "누워서 바벨을 들어 올리는 상체 운동",
@@ -348,7 +103,7 @@
             "id": "bench_press",
             "img": "bench_press.jpg",
             "name": "벤치프레스",
-            "tag": [],
+            "tag": ["팔", "어깨", "가슴", "상체", "벤치프레스", "벤치 프레스", "웨이트", "웨이트 트레이닝"],
             "detail": {
                 "name": "bench press",
                 "comment": "누워서 바벨을 들어 올리는 상체 운동",
@@ -363,7 +118,7 @@
             "id": "bench_press",
             "img": "bench_press.jpg",
             "name": "벤치프레스",
-            "tag": [],
+            "tag": ["팔", "어깨", "가슴", "상체", "벤치프레스", "벤치 프레스", "웨이트", "웨이트 트레이닝"],
             "detail": {
                 "name": "bench press",
                 "comment": "누워서 바벨을 들어 올리는 상체 운동",
@@ -378,7 +133,7 @@
             "id": "bench_press",
             "img": "bench_press.jpg",
             "name": "벤치프레스",
-            "tag": [],
+            "tag": ["팔", "어깨", "가슴", "상체", "벤치프레스", "벤치 프레스", "웨이트", "웨이트 트레이닝"],
             "detail": {
                 "name": "bench press",
                 "comment": "누워서 바벨을 들어 올리는 상체 운동",
@@ -390,17 +145,17 @@
             }
         },
         {
-            "id": "bench_press",
-            "img": "bench_press.jpg",
-            "name": "벤치프레스",
-            "tag": [],
+            "id": "bothering",
+            "img": "bothering.jfif",
+            "name": "귀찮다",
+            "tag": ["귀찮다"],
             "detail": {
-                "name": "bench press",
-                "comment": "누워서 바벨을 들어 올리는 상체 운동",
+                "name": "bothering",
+                "comment": "귀찮아ㅏㅏㅏㅏㅏㅏㅏㅏㅏ 왜케 많아ㅏㅏㅏㅏㅏㅏㅏㅏ",
                 "tag": {
-                    "arm": "팔",
-                    "chest": "가슴",
-                    "shoulder": "어깨"
+                    "bothering" : "귀찮다",
+                    "breathing":"나는 숨을 쉰다",
+                    "coding": "나는 코딩을 한다"
                 }
             }
         }
@@ -410,13 +165,13 @@
             "id": "arm",
             "img": "arm.jpg",
             "name": "팔",
-            "tag": [],
+            "tag": ["전완근", "이두근", "삼두근", "팔", "팔근육", "팔 근육", "상체", "상체 근육", "상체근육"],
             "detail": {
                 "name": "arm",
                 "comment": "어깨 아래 있는 팔근육들을 분류하였다.",
                 "tag": {
                     "forearm": "전완근",
-                    "biceps": "이두박근", 
+                    "biceps": "이두근", 
                     "triceps": "삼두근"
                 }
             }
@@ -425,44 +180,107 @@
             "id": "shoulder",
             "img": "shoulder.png",
             "name": "어깨",
-            "tag": [],
+            "tag": ["전면 삼각근", "측면 삼각근", "후면 삼각근", "승모근", "어깨", "전거근", "어깨 근육", "어깨근육", "회전근개", "상체", "상체 근육", "상체근육"],
             "detail": {
                 "name": "shoulder",
                 "comment": "어깨에 있는 근육들을 분류하였다.",
                 "tag": {
                     "anterior_deltoid": "전면 삼각근",
                     "lateral_deltoid": "측면 삼각근",
-                    "rear_deltoid": "후면 삼각근"
+                    "rear_deltoid": "후면 삼각근",
+                    "trapezius": "승모근",
+                    "rotator_cuff": "회전근개"
                 }
             }
         },
         {
-            "id": "arm",
-            "img": "arm.jpg",
-            "name": "팔",
-            "tag": [],
+            "id": "chest",
+            "img": "chest.jpg",
+            "name": "가슴",
+            "tag": ["대흉근", "소흉근", "전거근","가슴", "가슴근육", "가슴 근육", "상체", "상체근육", "상체 근육"],
             "detail": {
-                "name": "arm",
-                "comment": "어깨 아래 있는 팔근육들을 분류하였다.",
+                "name": "chest",
+                "comment": "가슴근육에는 대흉근, 소흉근, 전거근 등이 있다.",
                 "tag": {
-                    "forearm": "전완근",
-                    "biceps": "이두박근", 
-                    "triceps": "삼두근"
+                    "Pectoralis_major": "대흉근",
+                    "pectoralis_minor": "소흉근",
+                    "serratus_anterior": "전거근"
                 }
             }
         },
         {
-            "id": "shoulder",
-            "img": "shoulder.png",
-            "name": "어깨",
-            "tag": [],
+            "id": "back",
+            "img": "back.jfif",
+            "name": "등",
+            "tag": ["승모근", "광배근", "활배근", "등", "등근육", "등 근육", "척추 기립근", "척추", "코어", "코어 근육", "코어근육", "상체", "상체 근육", "상체근육"],
             "detail": {
                 "name": "shoulder",
-                "comment": "어깨에 있는 근육들을 분류하였다.",
+                "comment": "등에 있는 넓은 근육으로 승모근, 광배근, 코어라 불리는 척추 기립근이 있다.",
                 "tag": {
-                    "anterior_deltoid": "전면 삼각근",
-                    "lateral_deltoid": "측면 삼각근",
-                    "rear_deltoid": "후면 삼각근"
+                    "trapezius": "승모근",
+                    "latissimus dorsi": "광배근",
+                    "erector_spinae": "척추 기립근"
+                }
+            }
+        },
+        {
+            "id": "abdominal",
+            "img": "abdominal.png",
+            "name": "복부",
+            "tag": ["복부", "복근", "복사근", "복직근", "코어", "코어 근육", "코어근육", "상체", "상체 근육", "상체근육"],
+            "detail": {
+                "name": "abdominal",
+                "comment": "복부에 있는 근육으로 흔히 알고 있는 복근인 복직근, 주변 근육인 복사근 등이 있다.",
+                "tag": {
+                    "rectus_abdominis": "복직근",
+                    "internal_oblique": "내복사근",
+                    "external_oblique": "외복사근",
+                    "transversus_abdominis": "복횡근"
+                }
+            }
+        },
+        {
+            "id": "hip",
+            "img": "hip.jfif",
+            "name": "엉덩이",
+            "tag": ["엉덩이", "엉덩이 근육", "힙", "소둔근", "대둔근", "중둔근", "하체", "하체근육", "하체 근육"],
+            "detail": {
+                "name": "hip",
+                "comment": "엉덩이 근육에는 대둔근, 중둔근, 소둔근이 있다.",
+                "tag": {
+                    "gluteus_maximus": "대둔근",
+                    "gluteus_medius": "중둔근",
+                    "gluteus_minimus": "소둔근"
+                }
+            }
+        },
+        {
+            "id": "thigh",
+            "img": "thigh.jpg",
+            "name": "허벅지",
+            "tag": ["허벅지", "허벅지 근육", "내전근", "대퇴사두근", "햄스트링", "봉공근", "다리", "다리근육", "다리 근육", "하체", "하체근육", "하체 근육"],
+            "detail": {
+                "name": "thigh",
+                "comment": "허벅지 근육은 많이 있다.",
+                "tag": {
+                    "quadriceps": "대퇴사두근",
+                    "adductor": "내전근",
+                    "hamstring": "햄스트링",
+                    "sartorius": "봉공근"
+                }
+            }
+        },
+        {
+            "id": "calf",
+            "img": "calf.jpg",
+            "name": "종아리",
+            "tag": ["종아리", "종아리 근육", "비복근", "가자미근", "다리", "다리근육", "다리 근육", "하체", "하체 근육", "하체근육"],
+            "detail": {
+                "name": "calf",
+                "comment": "종아리 근육에는 비복근, 가자미근이 있다.",
+                "tag": {
+                    "gastrocnemius": "비복근",
+                    "soleus": "가자미근"
                 }
             }
         }

@@ -4,6 +4,44 @@ header{
     background-size: 100% 100%;
 }
 
+.sub-menu-about-clearfix{
+    margin-top: 15px;
+    list-style-type: none;
+    text-align: center;
+    color: rgb(128, 122, 122);
+}
+
+.sub-menu-about-clearfix li{
+    padding-right: 100px;
+    display: inline;
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 21px;
+    font-size: 20px;
+    /* background-color: white; */
+}
+
+.sub-menu-about-clearfix a{
+    text-decoration: center;
+    color: inherit;
+}
+
+.choose_sub{
+    color: white;
+    background-color: #2C2B2F;
+    border-bottom: 2px solid #FFFF00;
+}
+
+.main{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 60px;
+}
+
 section{
     width: 80%;
     padding-left: 10%;

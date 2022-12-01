@@ -9,8 +9,8 @@ header{
 }
 
 .main{
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 150px;
 }
 
 
@@ -18,10 +18,6 @@ H1{
     margin: 0px;
     text-align: center;
     font-size: 60px;
-}
-
-.area{
-    margin-top: 15px;
 }
 
 .area a{
@@ -41,6 +37,7 @@ H1{
 }
 
 .sub-menu-about-clearfix{
+    padding-top: 15px;
     list-style-type: none;
     text-align: center;
     color: rgb(128, 122, 122);

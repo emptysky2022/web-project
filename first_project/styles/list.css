@@ -17,18 +17,15 @@ nav{
 
 }
 
-section{
-    
-}
-.area{
-    margin-top: 15px;
-}
-
-.area a{
-    text-decoration: none;
-    color: inherit;
+.main{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
+.main h1 {
+    font-size: 60px;
+}
 
 .section_header_text h1, .header_text p{
     margin: 10px 0;
@@ -39,6 +36,7 @@ section{
 } */
 
 .sub-menu-about-clearfix{
+    padding-top: 15px;
     list-style-type: none;
     text-align: center;
     color: rgb(128, 122, 122);
@@ -51,7 +49,18 @@ section{
     padding-top: 15px;
     padding-bottom: 21px;
     font-size: 20px;
-    background-color: white;
+    /* background-color: white; */
+}
+
+.sub-menu-about-clearfix a{
+    text-decoration: center;
+    color: inherit;
+}
+
+.choose_sub{
+    color: white;
+    background-color: #2C2B2F;
+    border-bottom: 2px solid #FFFF00;
 }
 
 .search{

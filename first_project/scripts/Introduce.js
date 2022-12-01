@@ -23,7 +23,3 @@ function foo(value){
     document.getElementById(value).style.backgroundColor = "#2C2B2F";
     document.getElementById(value).style.borderBottom = "2px solid #FFFF00";
 }
-
-
-
-

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>니몸쩔드라</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
@@ -20,6 +20,17 @@
             background-image: url("../../images/main/backgroundimg2.jpg");
             background-size: 100% 100%;
         }
+
+        .main{
+        padding-top: 50px;
+        padding-bottom: 100px;
+        text-align: center;
+        }
+
+        .main h1 {
+            font-size: 60px;
+        }
+
         #main{
             left: 50%;
             transform: translateX(-50%);
@@ -227,6 +238,30 @@
         #bb{
             color: rgb(167, 72, 35)
         }
+        .sub-menu-about-clearfix{
+            margin-top: 15px;
+            list-style-type: none;
+            text-align: center;
+            color: white;
+        }
+
+        .sub-menu-about-clearfix li{
+            padding-right: 100px;
+            display: inline;
+            padding-left: 100px;
+            padding-top: 15px;
+            padding-bottom: 21px;
+            font-size: 20px;
+            background-color: #2C2B2F;
+            border-bottom: 2px solid #FFFF00;
+        }
+        .area a{
+            text-decoration: none;
+            color: inherit;
+        }
+        
+
+
     </style>
     <script>
         function mouseIn_chest(elem){ // 가슴
@@ -257,12 +292,35 @@
         function mouseOut(elem){
             document.getElementById("main_img").src = "../../images/muscle/body.png"
         }
-        
-        
-        
+
+        var pagename =  "";
+
+        function submenuover(value){
+            value.style.color = "white";
+            value.style.backgroundColor = "#2C2B2F";
+            value.style.borderBottom = "2px solid #FFFF00";
+        }
+
+
     </script>
 </head>
 <body>
+    <aside id ="topMenu01">
+        <div class="area">
+            <ul class="sub-menu-about-clearfix">
+                <a href="main.html" >
+                <li id ="AboutUs" onmouseover="submenuover(this)">
+                        <span>Execrise Part</span>
+                </li>
+                </a>
+            </ul>
+        </div>
+        <br><hr>
+    </aside>
+    <div class="main">
+        <img src="../../images/about/mainImg.PNG" alt="">
+        <h1>Exercise Part</h1>
+    </div>
     <br>
     <br>
     <div id="aa">

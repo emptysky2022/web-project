@@ -59,6 +59,21 @@ function pushSwiper() {
         }
       });
 }
+function submenuover(value){
+    value.style.color = "white";
+    value.style.backgroundColor = "#2C2B2F";
+    value.style.borderBottom = "2px solid #FFFF00";
+}
+
+function submenuleave(value){
+    if ($("section").attr("id") != value.id)
+    {
+        value.style.backgroundColor = "white";
+        value.style.color = "gray";
+        value.style.border = "none";
+        value.style.borderBottom = "none";
+    }
+}
 
 $(function() {
     const listId = new URL(window.location).searchParams.get('id')

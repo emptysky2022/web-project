@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../styles/list.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <title>니몸쩔드라</title>
 </head>
 <body>
     <!-- <header>
@@ -52,32 +53,35 @@
         </div>
     </ul>
 </nav> -->
-<aside id ="topMenu01">
-    <div class="side-menu-inner">
-        <div class="side-menu-inner">
-            <div class="area">
-                <ul class="sub-menu-about-clearfix">
-                    <a href="AboutUs.html" >
-                    <li id ="AboutUs" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
-                            <span>About us</span>
-                    </li>
-                    </a>
-                    <a href="Mission.html">
-                    <li id ="Mission" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
-                            <span>Mission</span>
-                    </li>
-                    </a>
-                    <div class="search">
-                        <input type="text" id="search" width="20px">
-                        <button type="button" id="search_check">검색</button>
-                        <span id="search_tag" hidden></span>
-                    </div>
-                </ul>
-        </div>
-        <br>
-        <hr>
+    <aside>
+        <ul class="sub-menu-about-clearfix">
+            <a href="main.html" >
+            <li class="choose_sub" id ="goods" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                    <span>운동 기구</span>
+            </li>
+            </a>
+            <a href="../Exercise/main.html">
+            <li id ="exercise" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                    <span>운동 종류</span>
+            </li>
+            </a>
+            <a href="../Parts/main.html">
+            <li id ="parts" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                    <span>운동 부위</span>
+            </li>
+            </a>
+            <div class="search">
+                <input type="text" id="search" width="20px">
+                <button type="button" id="search_check">검색</button>
+                <span id="search_tag" hidden></span>
+            </div>
+        </ul>
+        <br><hr>
     </aside>
-    <aside></aside>
+    <div class="main">
+        <img src="../../images/about/mainImg.PNG" alt="">
+        <h1>Goods</h1>
+    </div>
     <section id="goods">
         <!-- <div class="section_header">
             <div class="section_header_text">

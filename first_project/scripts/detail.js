@@ -1,3 +1,19 @@
+function submenuover(value){
+    value.style.color = "white";
+    value.style.backgroundColor = "#2C2B2F";
+    value.style.borderBottom = "2px solid #FFFF00";
+}
+
+function submenuleave(value){
+    if ($("section").attr("id") != value.id)
+    {
+        value.style.backgroundColor = "white";
+        value.style.color = "gray";
+        value.style.border = "none";
+        value.style.borderBottom = "none";
+    }
+}
+
 $(function () {
     const listId = new URL(window.location).searchParams.get('id')
     let listHtml
@@ -11,6 +27,7 @@ $(function () {
         const list = request.response[listInfo].filter(e => e.id == listId)
         const tagHref = Object.keys(list[0].detail.tag)
         const tagName = Object.values(list[0].detail.tag)
+        $("#main_text").append(list[0].name + " (" + list[0].detail.name + ")")
         console.log(listInfo)
         listHtml = 
         "<img class='toolImage' src='../../images/list/"+list[0].img + "' alt='" + list[0].name + "'>"

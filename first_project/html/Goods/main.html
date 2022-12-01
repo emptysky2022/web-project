@@ -40,13 +40,43 @@
             </button>
         </nav>
     </header> -->
-<nav class="sub_navbar">
+<!-- <nav class="sub_navbar">
     <ul>
         <li><a href="main.html">운동 기구</a></li>
         <li><a href="../Exercise/main.html">운동 종류</a></li>
         <li><a href="../Parts/main.html">운동 부위</a></li>
+        <div class="search">
+            <input type="text" id="search" width="20px">
+            <button type="button" id="search_check">검색</button>
+            <span id="search_tag" hidden></span>
+        </div>
     </ul>
-</nav>
+</nav> -->
+<aside id ="topMenu01">
+    <div class="side-menu-inner">
+        <div class="side-menu-inner">
+            <div class="area">
+                <ul class="sub-menu-about-clearfix">
+                    <a href="AboutUs.html" >
+                    <li id ="AboutUs" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                            <span>About us</span>
+                    </li>
+                    </a>
+                    <a href="Mission.html">
+                    <li id ="Mission" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                            <span>Mission</span>
+                    </li>
+                    </a>
+                    <div class="search">
+                        <input type="text" id="search" width="20px">
+                        <button type="button" id="search_check">검색</button>
+                        <span id="search_tag" hidden></span>
+                    </div>
+                </ul>
+        </div>
+        <br>
+        <hr>
+    </aside>
     <aside></aside>
     <section id="goods">
         <!-- <div class="section_header">
@@ -61,19 +91,12 @@
             <li>음식</li>
         </ul> -->
         <article>
-            <div class="search">
+            <!-- <div class="search">
                 <input type="text" id="search" width="20px">
                 <button type="button" id="search_check">검색</button>
                 <span id="search_tag" hidden></span>
-            </div>
-            <!-- <div class="content">
-                <div id="running" class="list">
-                    <img src="../images/running.jpg" alt="러닝머신">
-                    <p>러닝머신</p>
-                </div>
             </div> -->
         </article>
     </section>
-    <footer></footer>
 </body>
 </html>

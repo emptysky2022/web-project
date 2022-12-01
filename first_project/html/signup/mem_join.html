@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../../scripts/header.js"></script>
+    <script src="../../scripts/mem_join.js"></script>
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/mem_join.css">
+</head>
+
+<body>
+    <div id="tjrgh">
+        <form id="member" method="post">
+            <!-- <p style="font-size: 10px; color: green; margin: 0px; padding: 0px;" >규칙에 맞는 비밀번호 입니다.</p> -->
+            <!-- id : autofocus + placeholder + br + onblur(입력값없음체크+글자수체크) -->
+            <div>
+                <b>아이디</b>
+            </div>
+            <div>
+                <input type="text" id="id" placeholder="ex) gildong123" onblur="checkBlank(this, 'msgId', 4, 21)"
+                    autofocus><br>
+                <p id="msgId"></p>
+            </div>
+            <!-- pw : placeholder + br + onblur(입력값없음체크+글자수체크) -->
+            <div>
+                <b>비밀번호</b>
+            </div>
+            <div>
+                <input type="password" id="pw" placeholder="양식에 맞게 설정해주세요." onblur="check_exp(this, 'msgPw')"><br>
+                <p id="msgPw">문자, 숫자, 특수기호의 조합을 사용해주세요.</p>
+            </div>
+            <!-- repw(비밀번호 재입력) : placeholder + br + onblur(입력값없음체크+글자수체크) -->
+            <div>
+                <b>비밀번호 재확인</b>
+            </div>
+            <div>
+                <input type="password" id="repw" placeholder="ex) 비밀번호와 똑같이 적어주세요."
+                    onblur="check_pw(this, 'msgRepw')"><br>
+                <p id="msgRepw">비밀번호와 동일하게 작성해주세요.</p>
+            </div>
+            <!-- name : placeholder + br + onblur(입력값없음체크+글자수체크) -->
+            <div>
+                <b>이름</b>
+            </div>
+            <div>
+                <input type="text" id="name" placeholder="ex) 홍길동" onblur="checkBlank(this, 'msgName', 1, 6)"><br>
+                <p id="msgName"></p>
+            </div>
+            <!-- birthday : br -->
+            <div>
+                <b>생년월일</b>
+            </div>
+            <div>
+                <input type="date" id="birthday"><br>
+                <p id="msgBirth"></p>
+            </div>
+            <!-- gender : 남성, 여성, 선택 안함 3가지 선택지 -->
+            <div>
+                <b>성별</b>
+            </div>
+            <div>
+                <input type="radio" name="gender" id="gender1" value="male">&nbsp;남성&nbsp;&nbsp;&nbsp;&nbsp;<input
+                    type="radio" name="gender" id="gender2" value="female">&nbsp;여성&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="gender3" value="nonesex">&nbsp;선택 안함<br>
+                <p id="msgSex"></p>
+            </div>
+            <!-- email : br + onblur(입력값없음체크+null) -->
+            <div>
+                <b>이메일</b>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="ex) gildong12@gmail.com"
+                    onblur="checkBlank(this, 'msgEmail', null, null)"><br>
+                <p id="msgEmail"></p>
+            </div>
+            <!-- phone : placeholder + br + onblur(입력값없음체크+null) -->
+            <div>
+                <b>핸드폰 번호</b>
+            </div>
+            <div>
+                <input type="tel" id="phone" placeholder="ex) 000-0000-0000"
+                    onblur="checkBlank(this, 'msgPhone', null, null)"><br>
+                <p id="msgPhone"></p>
+            </div>
+
+            <!-- 가입 하기 버튼 -->
+            <a href="#"><input id="comple" type="button" value="가입 하기"
+                    onclick="check_birth('birthday', 'msgBirth')"></a>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    background-image: url(../images/space.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+#tjrgh {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 50px;
+    width: 365px;
+    height: auto;
+    
+}
+
+#tjrgh>form>div {
+    margin: 5px;
+}
+
+p {
+    font-size: 10px;
+    color: rgb(128, 128, 128);
+}
+
+#comple{
+    width: 235px;
+    height: 30px;
+    margin: 5px;
+    margin-top: 15px;
+    background-color: rgb(15, 10, 63);
+    border-radius: 3px;
+    border: 1px soild;
+    color: azure;
+}
+
+input {
+    height: 20px;
+    width: 230px;
+}
+
+#gender1, #gender2, #gender3 {
+    width: 15px;
+    height: 15px;
+}

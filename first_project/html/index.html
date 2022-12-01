@@ -1,50 +1,64 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="../scripts/main.js" defer></script>
-    <title>Nav bar</title>
+    <!-- <link href="styles.css?ver=20" rel="stylesheet"> -->
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/index.js"></script>
 </head>
 
 <body>
-    <header>
-            <nav class="navbar">
-                <div class="navbar_logo">
-                    <i class="fas fa-hamburger"></i>
-                    <a href="index.html">Cheese burger</a>
-                </div>
+    <div class="blackBackground">
+        <div class="razor"></div>
+    </div>
+    <!-- fixed -->
+    <div class="menu">
+        <div class="menuLeft">
+            <p class="menuText" id="menuIntro"><a href="About/AboutUs.html">About Us</a></p>
+            <p class="menuText" id="menuProduct"><a href="muscle/main.html">Exercise Part</a></p>
+            <p class="menuText" id="menuCounceling"><a href="Goods/main.html">Fitness Equipment</a></p>
+            <a href="#" onclick="window.open('signup/login.html','blank','width=310 , height=160, top=400, left=900', true)">로그인</a><br>
+            <p></p>
+            <a href="signup/mem_join.html">회원가입</a>
+        </div>
 
-                <ul class="navbar_menu">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Recipe</a></li>
-                    <li><a href="">Ingredients</a></li>
-                    <li><a href="">Side dishes</a></li>
-                    <li><a href="">Info</a></li>
-                </ul>
-
-                <ul class="navbar_icons">
-                    <li><a id="login1" href="">로그인</a></li>
-                    <li><a href="">회원가입</a></li>
-                </ul>
-                <button class="navbar_toggleBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                
-            </nav>
-    </header>
-    <nav class="sub_navbar">
-        <ul>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">news</a></li>
-            <li><a href="#">my account</a></li>
-        </ul>
-    </nav>
+    </div>
+    <a href="index.html"><img class="companyIcon" src='../images/logo.png'></a>
+    
+    <a href="#" target="_blank"><img src="../images/main/github.png" class="icon" id="facebook"></a>
+    <a href="#" target="_blank"><img src="../images/main/instagram.png" class="icon" id="instagram"></a>
+    <img src="../images/main/arrow.gif" class="arrow">
+    <div class="menuButton">
+        <div class="menuBtnUpLine"></div>
+        <div class="menuBtnBottomLine"></div>
+    </div>
+    
+    <!-- slider -->
+    <ul class="slider">
+        <li class="page" id="page1" alt="">
+            <p class="headLine" id="introHeadLine">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </li>
+        <li class="page" id="page2" alt="">
+            <p class="headLine" id="productHeadLine">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </li>
+        </li>
+        <li class="page" id="page3" alt="">
+            <p class="headLine" id="councelingHeadLine">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+        </li>
+        <!-- <li class = "page" id = "page4" alt=""></li> -->
+    </ul>
 </body>
 
-</html> -->
+</html>

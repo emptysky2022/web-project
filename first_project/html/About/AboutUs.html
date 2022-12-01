@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../styles/header.css">
+    <script src="../../scripts/header.js"></script>
+    <link rel="stylesheet" href="../../styles/AboutUs.css">
+    <script src = "../../scripts/Introduce.js"></script>
+    <script>
+
+var mousestep = 100;
+    var showdelay = 700;
+    var closedelay = 700;
+ /////////////////////////////// opacity changer //////////////////////////////////////////////
+
+    var showok1 = false;
+    var closeok1 = false;
+
+    function test( index , value){
+        $('.middleMenu0'+ index).each( function(i){
+            if( value == true ){
+                console.log( index + '보이기시작');
+                $(this).animate({'opacity':'1'},showdelay);
+                if (index == 1){
+                    showok1 = true;
+                    closeok1 = false;
+                } 
+
+            } else{
+                console.log( index + '안보이기시작');
+                $(this).animate({'opacity':'0'},closedelay);
+                if (index == 1){
+                    showok1 = false;
+                    closeok1 = true;
+                }
+            }   
+        }); 
+    }
+/////////////////////////////// 올라가쟈 //////////////////////////////////////////////
+    
+    $(function() {
+    // 보이기 | 숨기기
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) { //50 넘으면 버튼이 보여짐니다.
+        $('#toTop').fadeIn();
+
+            var pagesize =  $( document ).height() - $( window ).height();
+            var percent = parseInt((($(this).scrollTop() / pagesize) * 100));
+
+               
+                    if (percent > 7){
+                        if (showok1 == false)
+                        {
+                            test("1", true);
+                        }
+                    }
+                
+                    if (percent < 7){
+                        if (showok1 == true)
+                        {
+                            test("1", false);
+                        }
+                    }
+                
+                
+
+            document.getElementById("toTop").innerHTML =  "<h4>↑</h4>"+ percent + "%";
+            } else {
+            $('#toTop').fadeOut();
+      }
+   });
+
+   // 버튼 클릭시
+   $("#toTop").click(function() {   
+   $('html, body').animate({
+     scrollTop : 0    // 0 까지 animation 이동합니다.
+    }, 400);          // 속도 400
+    return false;
+    });
+    });
+
+    </script>
+    <title>Document</title>
+</head>
+<body onload = "foo('AboutUs')">
+
+    <aside id ="topMenu01">
+    <div class="side-menu-inner">
+        <div class="side-menu-inner">
+            <div class="area">
+                <ul class="sub-menu-about-clearfix">
+                    <a href="AboutUs.html" >
+                    <li id ="AboutUs" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                            <span>About us</span>
+                    </li>
+                    </a>
+                    <a href="Mission.html">
+                    <li id ="Mission" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                            <span>Mission</span>
+                    </li>
+                    </a>
+                </ul>
+        </div>
+        <br>
+        <hr>
+    </aside>
+    
+    <center class ="main">
+    <img src="../../images/about/mainImg.PNG" alt="">
+    <h1>About Us</h1>
+    </center>
+
+    <div>
+    <center>
+        <ul class ="middleMenu01">
+            <li class = "sectionleft">
+                <img src="../../images/about/body.jpg" alt="" >
+                <h2> Why ? </h2>
+                <br>
+                <h3> 운동은 왜 해야 하는가를 알아보기 전에 <br>
+                 운동은 무엇인가를 먼저 아는 것이 중요합니다. </h3>
+                <br>
+                많은 사람들은 신체활동과 운동이라는 용어를 잘 구분하지 못하는 경우가 많습니다.
+                신체활동이라는 것은 골격근이 사용되면서 에너지를 소모하는 일련의
+                모든 움직임을 말하는 반면 운동은 체력의 유지나 향상을 위해 
+                실시되는 계획되고 구조화된 형태의 신체의 움직임을 말합니다.
+                운동을 하는 목적은 개인마다 다를 수 있지만,
+                우리는 운동을 통해서 아래와 같은 내용의 효과를 얻을 수 있습니다.
+                <br>
+            </li>
+            <li class = "sectionMiddle">
+                <img src="../../images/about/exercise.jpg" alt="" >
+                <h2> How ? </h2>
+                <br>
+                <h3> 운동을 시작하기 전에 내몸이 어떤 상태인지 아는것 이 중요합니다. </h3>
+                <br>
+                옷으로 군살을 감춰 겉보기엔 날씬해도 마른 비만이거나 복무 비만일수 있어
+                안심해선 안됩니다, 체중(kg) 을 키 (cm)의 제곱으로 나눈 BMI 가 18.4 ~ 23 사이이면
+                정상이라고 하지만 체성분 분석기로 지방과 근육의 비율을 정확히 측정하는 편이 좋습니다.
+                <br>
+            </li>
+            <li class = "sectionRight">
+                <img src="../../images/about/analysis.jpg"  alt="" >
+                <h2> Plan </h2>
+                <br>
+                <h3>많은 사람이 운동계획을 세우지만 실패하는 가장 큰 이유는 운동을 단기 목표로만 생각하기 때문입니다.</h3>
+                <br>
+                운동이 습관처럼 되려면 최소한 3개월 이상 꾸준히 운동해야 하기 때문에 
+                의지와 분명한 목표가 필요합니다. 하지만 대부분 사람들이 단순히 체중 10kg을 1달 내에 빼겠다거나
+                매일 2시간 씩 운동을 하겠다거나 하는 식의 포괄적이며 너무 거창한 계획을 세우기 때문에 실패하는 것입니다.
+                그러기에 우리 MD HEALTH CARE 가 함께하겠습니다 강사들의 도움을 받아 운동계획을 세우고 실천하세요!
+            </li>
+        </ul>
+    </center>
+
+    <div style="display: inline-block;">
+        <button id="toTop" href="#" >
+            TOP
+        </button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: url("../../images/main/backgroundimg1.jpg");
+    background-size: 100% 100%;
+}
+
+.main{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+H1{
+    margin: 0px;
+    text-align: center;
+    font-size: 60px;
+}
+
+h3{
+    margin: 0px;
+    font-size: 40px;
+}
+
+.area a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.area{
+    margin-top: 15px;
+}
+
+.middleMenu01{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    opacity: 0;
+}
+
+
+.middleMenu02{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    opacity: 0;
+}
+
+.middleMenu03{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    opacity: 0;
+}
+.middleMenu04{
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    opacity: 0;
+}
+
+.middleMenu01 img, .middleMenu02 img, .middleMenu03 img, .middleMenu04 img{
+    width: 600px;
+    height: 400px;
+}
+
+
+.sub-menu-about-clearfix{
+    list-style-type: none;
+    text-align: center;
+    color: rgb(128, 122, 122);
+}
+
+.sub-menu-about-clearfix li{
+    padding-right: 100px;
+    display: inline;
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 21px;
+    font-size: 20px;
+    background-color: white;
+}
+
+
+.sectionleft{
+    text-align: left;
+    float: left;    
+    padding: 0;
+}
+
+.sectionMiddle{
+    float: left;
+}
+
+.sectionRight{
+    float: right;
+    padding: 0;
+
+}
+
+.sectionleft,.sectionMiddle,.sectionRight{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#toTop {
+    position: fixed;   /* 포지션 고정 */
+    bottom: 50px;     /* 밑에서 100px */
+    right: 50px;
+    display: none;     /* 보여지지 없음 - 기본적으로  안보여지게 */
+    z-index: 9999;     /* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */
+    background-color: white;
+    border-radius: 20%;
+    border: 0.5px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+ #toTop:hover{
+    background-color: yellow;
+    color: black;
+    width: 45px;
+    height: 45px;
+ }

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="../../scripts/header.js"></script>
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/Mission.css">
+    <script src = "../../scripts/Introduce.js"></script>
+    <script>
+
+    var mousestep = 100;
+    var showdelay = 700;
+    var closedelay = 700;
+ /////////////////////////////// opacity changer //////////////////////////////////////////////
+
+    // $(document).ready(function() {
+    //     $(window).scroll( function(){
+    //         $('.middleMenu01').each( function(i){
+    //             if( $(window).scrollTop() > mousestep * 1 ){
+    //                 $(this).animate({'opacity':'1'},showdelay);
+    //             } else{
+    //                 $(this).animate({'opacity':'0'},closedelay);
+    //             }
+    //         }); 
+    //     });
+    // });
+
+    var showok1 = false;
+    var closeok1 = false;
+    var showok2 = false;
+    var closeok2 = false;
+    var showok3 = false;
+    var closeok3 = false;
+    var showok4 = false;
+    var closeok4 = false;
+
+    function test( index , value){
+        $('.middleMenu0'+ index).each( function(i){
+            if( value == true ){
+                console.log( index + '보이기시작');
+                $(this).animate({'opacity':'1'},showdelay);
+                if (index == 1){
+                    showok1 = true;
+                    closeok1 = false;
+                } else if (index ==2){
+                    showok2 = true;
+                    closeok2 = false;
+                }else if (index ==3){
+                    showok3 = true;
+                    closeok3 = false;
+                }else{
+                    showok4 = true;
+                    closeok4 = false;
+                }
+
+            } else{
+                console.log( index + '안보이기시작');
+                $(this).animate({'opacity':'0'},closedelay);
+                if (index == 1){
+                    showok1 = false;
+                    closeok1 = true;
+                } else if (index ==2){
+                    showok2 = false;
+                    closeok2 = true;
+                }else if (index ==3){
+                    showok3 = false;
+                    closeok3 = true;
+                }else{
+                    showok4 = false;
+                    closeok4 = true;
+                }
+            }   
+        }); 
+    }
+
+    // $(document).ready(function() {
+    //     $(window).scroll( function(){
+    //         $('.middleMenu02').each( function(i){
+    //             if( $(window).scrollTop() > mousestep * 4 ){
+    //                 $(this).animate({'opacity':'1'},showdelay);
+    //             }
+    //             else{
+    //                 $(this).animate({'opacity':'0'},closedelay);
+    //             }
+    //         }); 
+    //     });
+    // });
+
+    // $(document).ready(function() {
+    //     $(window).scroll( function(){
+    //         $('.middleMenu03').each( function(i){
+    //             if( $(window).scrollTop() > mousestep * 6 ){
+    //                 $(this).animate({'opacity':'1'},showdelay);
+    //             }
+    //             else{
+    //                 $(this).animate({'opacity':'0'},closedelay);
+    //             }
+    //         }); 
+    //     });
+    // });
+
+    // $(document).ready(function() {
+    //     $(window).scroll( function(){
+    //         $('.middleMenu04').each( function(i){
+    //             if( $(window).scrollTop() > mousestep * 9 ){
+    //                 $(this).animate({'opacity':'1'},showdelay);
+    //             }
+    //             else{
+    //                 $(this).animate({'opacity':'0'},closedelay);
+    //             }
+    //         }); 
+    //     });
+    // });
+/////////////////////////////// 올라가쟈 //////////////////////////////////////////////
+    
+    $(function() {
+    // 보이기 | 숨기기
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 50) { //50 넘으면 버튼이 보여짐니다.
+        $('#toTop').fadeIn();
+
+            var pagesize =  $( document ).height() - $( window ).height();
+            var percent = parseInt((($(this).scrollTop() / pagesize) * 100));
+
+               
+                    if (percent > 7){
+                        if (showok1 == false)
+                        {
+                            test("1", true);
+                        }
+                    }
+                    if (percent > 39){
+                        if (showok2 == false)
+                        {
+                            test("2", true);
+                        }
+                    }
+                    if (percent > 67){
+                        if (showok3 == false)
+                        {
+                            test("3", true);
+                        }
+                    }
+                    if (percent > 84){
+                        if (showok4 == false)
+                        {
+                            test("4", true);
+                        }
+                    }
+                
+                    if (percent < 7){
+                        if (showok1 == true)
+                        {
+                            test("1", false);
+                        }
+                    }
+                    if (percent < 39){
+                        if (showok2 == true)
+                        {
+                            test("2", false);
+                        }
+                    }
+                    if (percent < 67){
+                        if (showok3 == true)
+                        {
+                            test("3", false);
+                        }
+                    }
+                    if (percent < 84){
+                        if (showok4 == true)
+                        {
+                            test("4", false);
+                        }
+                    }
+                
+                
+
+            document.getElementById("toTop").innerHTML =  "<h4>↑</h4>"+ percent + "%";
+            } else {
+            $('#toTop').fadeOut();
+      }
+   });
+
+   // 버튼 클릭시
+   $("#toTop").click(function() {   
+   $('html, body').animate({
+     scrollTop : 0    // 0 까지 animation 이동합니다.
+    }, 400);          // 속도 400
+    return false;
+    });
+    });
+
+    </script>
+    <title>Document</title>
+</head>
+
+<body onload = "foo('Mission')">
+    <aside id ="topMenu01">
+        <div class="side-menu-inner">
+            <div class="area">
+                <ul class="sub-menu-about-clearfix">
+                    <a href="AboutUs.html" >
+                    <li id ="AboutUs" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                            <span>About us</span>
+                    </li>
+                    </a>
+                    <a href="Mission.html">
+                    <li id ="Mission" onmouseover="submenuover(this)" onmouseleave="submenuleave(this)">
+                            <span>Mission</span>
+                    </li>
+                    </a>
+                </ul>
+        </div>
+        <br>
+        <hr>
+    </aside>
+    
+    <center class ="main">
+    <img src="../../images/about/mainImg.PNG" alt="">
+    <h1>Mission</h1>
+    </center>
+
+    <center>
+        <ul class ="middleMenu01" id ="ff">
+            <img src="../../images/about/love.PNG" alt="" >
+
+            <li class = "sectionleft">
+                <br>
+                <h3> What is our Mission? </h3>
+                <br>
+                우리가 운동을 어떤식으로 진행해야하는지 알려줍니다.
+                <br>
+            </li>
+        </ul>
+        
+        <ul class ="middleMenu02">
+
+            <li class="sectionleft">
+                <br>
+                <h3> Who are our <br> Customers? </h3>
+                <br>
+                당신의 육체적 성장을 위해서 당신의 근 능력을 확인하고 <br>
+                머슬 메모리를 주입시킵니다.
+                <br>
+            </li>
+
+            <img src="../../images/about/exercise2.jpg" alt="" >
+
+        </ul>
+
+        <ul class ="middleMenu03">
+            <img src="../../images/about/doc.PNG" alt="" >
+
+            <li class = "sectionleft">
+                <br>
+                <h3> what <br> diagnoses you ? </h3>
+                <br>
+                우리는 체계적인 방법으로 당신의 신체를 확인하고 <br>
+                좋은 운동 커리큘럼을 제시합니다.
+                <br>
+            </li>
+        </ul>
+
+        <ul class ="middleMenu04">
+
+            <li class="sectionleft">
+                <br>
+                <h3> help you <br> recover <br> </h3>
+                <br>
+                우리는 당신 육체 의 회복을 위해 처방
+                그리고 재활방법을 제시합니다.
+                <br>
+            </li>
+            
+            <img src="../../images/about/mask.PNG" alt="" >
+
+        </ul>
+
+    </center>
+
+        <div style="display: inline-block;">
+            <button id="toTop" href="#" >
+                <img src="../../images/about/Direction.png" alt="">
+                TOP
+            </button>
+        </div>
+            
+</body>
+</html>

@@ -3,12 +3,14 @@
 }
 
 body{
-    background-color: rgb(196,207,229);
+    /* background-color: rgb(196,207,229); */
 
 }
 
 header{
-
+    background-image: url("../images/main/backgroundimg3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 nav{
@@ -16,7 +18,15 @@ nav{
 }
 
 section{
-    min-height: 800px;
+    
+}
+.area{
+    margin-top: 15px;
+}
+
+.area a{
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -24,45 +34,38 @@ section{
     margin: 10px 0;
 }
 
-/* .sub_menu{
-    list-style: none;
-    height: 50px;
-    width: 50%;
-    margin-left: 25%;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.sub_menu li{
-    float: left;
-    width: 33%;
-    height: 60%;
-    text-align: center;
-    margin-top: 20px;
-    border-right: 1px solid black;
-}
-
-.sub_menu li:first-child{
-    border-left: 1px solid black;
+/* .sub_navbar ul{
+    position: relative;
 } */
 
-.search{
-    width: 100%;
-    padding: 10px 0;
+.sub-menu-about-clearfix{
+    list-style-type: none;
+    text-align: center;
+    color: rgb(128, 122, 122);
 }
 
-.search span{
-    margin: 10px;
-    padding: 0 5px;
-    border: 1px solid black;
-    border-radius: 10px;
+.sub-menu-about-clearfix li{
+    padding-right: 100px;
+    display: inline;
+    padding-left: 100px;
+    padding-top: 15px;
+    padding-bottom: 21px;
+    font-size: 20px;
+    background-color: white;
 }
+
+.search{
+    /* width: 100%; */
+    position: absolute;
+    display: inline;
+    right: 0;
+}
+
 
 .swiper {
     width: 80%;
     margin-left: 10%;
     height: 300px;
-    margin-bottom: 50px;
 }
 
 article>p{
@@ -101,13 +104,13 @@ article>p{
     height: 90%;
     display: inline;
     float: left;
-    background-color: white;
+    background-color: wheat;
     border-radius: 10px;
 }
 
 .list img{
     margin-left: 5%;
-    margin-top: 2.5%;
+    margin-top: 5%;
 }
 
 .swiper-slide img {
@@ -120,7 +123,7 @@ article>p{
 
 .list p{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     font-weight: bold;
 }
 
@@ -128,4 +131,34 @@ article>p{
     transform: translate(-5px, -5px);
     /* background-color: red; */
     box-shadow: 2px 2px 3px gray;
+}
+
+#toTop {
+    position: fixed;   /* 포지션 고정 */
+    bottom: 50px;     /* 밑에서 100px */
+    right: 50px;
+    display: none;     /* 보여지지 없음 - 기본적으로  안보여지게 */
+    z-index: 9999;     /* 포지션을 먼저 지정후 z-좌표(레이어) : 9999입니다. */
+    background-color: white;
+    border-radius: 20%;
+    border: 0.5px solid black;
+    width: 40px;
+    height: 40px;
+}
+
+ #toTop:hover{
+    background-color: yellow;
+    color: black;
+    width: 45px;
+    height: 45px;
+ }
+
+@media screen and (max-width: 1000px) {
+    .sub_navbar ul{
+        padding: 40px 0;
+    }
+
+    .search{
+        bottom: 0;
+    }
 }
